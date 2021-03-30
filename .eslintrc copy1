@@ -1,0 +1,41 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "rules": {
+       "semi": "error",
+
+      // "semi": "off"
+       // no unfed : detecte les variable non defini  => c n est definit  (c= 10 )
+       "no-undef":"error"
+
+    }
+
+    // pour contaire les variable installer dans le pc : commme ( console.log )
+    ,
+    "env": {
+       "browser": "true"
+
+    }
+}
+
+
+/*
+ 
+"parserOptions": { ===>
+        "ecmaVersion": 6,  ===> es6 
+        "sourceType": "module", ===> import and export 
+        "ecmaFeatures": {===>
+            "jsx": true===> html et js
+        }
+    },
+    "rules": {===>       
+        "semi": "error" ===> des regles pour afficher des exp  des errors  : si je ne fais pas ; il affiche une error 
+                "semi": "off" ===>  si je ne pas travailler avec ; et n affiche pas d erreur 
+
+    }
+ // si je run et fix tout  seul npx eslint . --fix*/

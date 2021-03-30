@@ -1,0 +1,57 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    //extends des regles deja definit par defaut  
+    /*
+    let a =`30` ;
+
+let b=`${a} is greater à 20 `; || b :error car definit et n est pas untilise  || a esta3mlnaha donc pas d error 
+    */
+    // genere par eslint;; ==>> besh n9oulou eslint besh ytaba3 prettier => eslint-config-prettier
+    "extends":  ["eslint:recommended" ,"eslint-config-prettier"],
+    "rules": {
+    
+       // n5ali console t5dem ["eslint:recommended"]  :donc fait cette regle 
+       "no-console":"off",
+
+       // single "" : error lazm nsta3ml''
+       "quotes":["error","single"]
+    }
+    // pour contaire les variable installer dans le pc : commme ( console.log )
+    ,
+    "env": {
+       "browser": true
+
+    }
+    
+}
+
+
+/*
+ 
+"parserOptions": { ===>
+        "ecmaVersion": 6,  ===> es6 
+        "sourceType": "module", ===> import and export 
+        "ecmaFeatures": {===>
+            "jsx": true===> html et js
+        }
+    },
+    "rules": {===>       
+        "semi": "error" ===> des regles pour afficher des exp  des errors  : si je ne fais pas ; il affiche une error 
+                "semi": "off" ===>  si je ne pas travailler avec ; et n affiche pas d erreur 
+
+    }
+ // si je run et fix tout  seul npx eslint . --fix*/
+
+
+ // si j ai des ficher je ne veux pas voir ses erroes : creer fichier .eslintIgnore 
+
+ //outit de formatage avec prettier  : npx prettier index. js  => ysla7ha ken f console 
+
+ 
+ //outit de formatage avec prettier  : npx prettier index. js -- write  ysal7 espace .... 
